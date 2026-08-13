@@ -1,6 +1,6 @@
 ## Live Demo
 
-[Visit the deployed site](https://home-design-sample-structure.netlify.app/)
+[Visit the deployed site](https://home-design-teal.vercel.app/)
 
 # Home design
 
