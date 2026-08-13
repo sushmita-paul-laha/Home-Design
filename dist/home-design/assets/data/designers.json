@@ -1,0 +1,340 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Interiors",
+    "profileImage": "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=400",
+    "experience": "12 Years",
+    "rating": 4.9,
+    "projectsCompleted": 186,
+    "states": ["Delhi", "Haryana", "Uttar Pradesh", "Rajasthan"],
+    "specialization": [
+      "Modern Interiors",
+      "Luxury Interiors",
+      "Contemporary Design"
+    ],
+    "description": "Specialized in creating modern and luxurious residential interiors with a focus on functionality and elegant design.",
+    "projects": [
+      {
+        "id": 101,
+        "title": "Modern Living Room",
+        "category": "Living Room",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800"
+      },
+      {
+        "id": 102,
+        "title": "Luxury Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800"
+      },
+      {
+        "id": 103,
+        "title": "Minimal Bedroom",
+        "category": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800"
+      },
+      {
+        "id": 104,
+        "title": "Modern Bathroom",
+        "category": "Bathroom",
+        "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800"
+      },
+      {
+        "id": 105,
+        "title": "Balcony Garden",
+        "category": "Balcony",
+        "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800"
+      },
+      {
+        "id": 106,
+        "title": "Warm Dining Nook",
+        "category": "Dining Room",
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Studio Habitat",
+    "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+    "experience": "8 Years",
+    "rating": 4.8,
+    "projectsCompleted": 124,
+    "states": ["Maharashtra", "Goa", "Karnataka"],
+    "specialization": ["Minimalist Design", "Scandinavian", "Smart Homes"],
+    "description": "A creative interior design studio focused on minimalist, functional and smart residential spaces.",
+    "projects": [
+      {
+        "id": 201,
+        "title": "Scandinavian Bedroom",
+        "category": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1617104678098-de229db51175?w=800"
+      },
+      {
+        "id": 202,
+        "title": "Minimal Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      },
+      {
+        "id": 203,
+        "title": "Luxury Bathroom",
+        "category": "Bathroom",
+        "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      },
+      {
+        "id": 204,
+        "title": "Open Balcony",
+        "category": "Balcony",
+        "image": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+      },
+      {
+        "id": 205,
+        "title": "Clean Dining Space",
+        "category": "Dining Room",
+        "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Urban Nest Designs",
+    "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400",
+    "experience": "10 Years",
+    "rating": 4.7,
+    "projectsCompleted": 157,
+    "states": ["Tamil Nadu", "Telangana", "Karnataka", "Kerala"],
+    "specialization": [
+      "Traditional Interiors",
+      "Modern Indian",
+      "Luxury Homes"
+    ],
+    "description": "Designing beautiful Indian homes by combining traditional elements with modern architecture and functionality.",
+    "projects": [
+      {
+        "id": 301,
+        "title": "Indian Contemporary Living",
+        "category": "Living Room",
+        "image": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800"
+      },
+      {
+        "id": 302,
+        "title": "Luxury Master Bedroom",
+        "category": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1615874694520-474822394e73?w=800"
+      },
+      {
+        "id": 303,
+        "title": "Contemporary Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?w=800"
+      },
+      {
+        "id": 304,
+        "title": "Heritage Dining Room",
+        "category": "Dining Room",
+        "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "The Form Studio",
+    "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400",
+    "experience": "15 Years",
+    "rating": 4.9,
+    "projectsCompleted": 240,
+    "states": ["Delhi", "Maharashtra", "Rajasthan"],
+    "specialization": [
+      "Luxury Interiors",
+      "Contemporary Design",
+      "Modern Interiors"
+    ],
+    "description": "A detail-led studio creating refined, enduring interiors for ambitious city homes.",
+    "projects": [
+      {
+        "id": 401,
+        "title": "Editorial Living Room",
+        "category": "Living Room",
+        "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800"
+      },
+      {
+        "id": 402,
+        "title": "Marble Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800"
+      },
+      {
+        "id": 403,
+        "title": "Quiet Bedroom",
+        "category": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800"
+      },
+      {
+        "id": 404,
+        "title": "Sculptural Bath",
+        "category": "Bathroom",
+        "image": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=800"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Casa Verde",
+    "profileImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400",
+    "experience": "7 Years",
+    "rating": 4.6,
+    "projectsCompleted": 98,
+    "states": ["Goa", "Karnataka", "Kerala"],
+    "specialization": [
+      "Biophilic Design",
+      "Minimalist Design",
+      "Modern Indian"
+    ],
+    "description": "Natural materials, indoor gardens and relaxed layouts made for the way modern families live.",
+    "projects": [
+      {
+        "id": 501,
+        "title": "Tropical Balcony",
+        "category": "Balcony",
+        "image": "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=800"
+      },
+      {
+        "id": 502,
+        "title": "Green Living Room",
+        "category": "Living Room",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800"
+      },
+      {
+        "id": 503,
+        "title": "Natural Dining",
+        "category": "Dining Room",
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800"
+      },
+      {
+        "id": 504,
+        "title": "Sunlit Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Line & Light",
+    "profileImage": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400",
+    "experience": "9 Years",
+    "rating": 4.8,
+    "projectsCompleted": 143,
+    "states": ["Haryana", "Uttar Pradesh", "Punjab"],
+    "specialization": ["Scandinavian", "Contemporary Design", "Smart Homes"],
+    "description": "Practical, light-filled interiors that make everyday rituals feel considered and calm.",
+    "projects": [
+      {
+        "id": 601,
+        "title": "Light Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800"
+      },
+      {
+        "id": 602,
+        "title": "Soft Bedroom",
+        "category": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1617104678098-de229db51175?w=800"
+      },
+      {
+        "id": 603,
+        "title": "Flexible Dining",
+        "category": "Dining Room",
+        "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800"
+      },
+      {
+        "id": 604,
+        "title": "Family Bathroom",
+        "category": "Bathroom",
+        "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Aranya Living",
+    "profileImage": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400",
+    "experience": "11 Years",
+    "rating": 4.7,
+    "projectsCompleted": 171,
+    "states": ["Telangana", "Tamil Nadu", "Andhra Pradesh"],
+    "specialization": [
+      "Luxury Homes",
+      "Traditional Interiors",
+      "Modern Indian"
+    ],
+    "description": "Warm, layered homes where local craft and contemporary comfort share the same room.",
+    "projects": [
+      {
+        "id": 701,
+        "title": "Crafted Living Room",
+        "category": "Living Room",
+        "image": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800"
+      },
+      {
+        "id": 702,
+        "title": "Statement Bedroom",
+        "category": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1615874694520-474822394e73?w=800"
+      },
+      {
+        "id": 703,
+        "title": "Heritage Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?w=800"
+      },
+      {
+        "id": 704,
+        "title": "Courtyard Balcony",
+        "category": "Balcony",
+        "image": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Northstar Atelier",
+    "profileImage": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400",
+    "experience": "6 Years",
+    "rating": 4.5,
+    "projectsCompleted": 82,
+    "states": ["Delhi", "Haryana", "Punjab", "Uttar Pradesh"],
+    "specialization": [
+      "Modern Interiors",
+      "Minimalist Design",
+      "Contemporary Design"
+    ],
+    "description": "A young atelier designing confident, flexible spaces for first homes and fresh starts.",
+    "projects": [
+      {
+        "id": 801,
+        "title": "First Home Kitchen",
+        "category": "Kitchen",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      },
+      {
+        "id": 802,
+        "title": "Compact Living",
+        "category": "Living Room",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800"
+      },
+      {
+        "id": 803,
+        "title": "Restful Bedroom",
+        "category": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800"
+      },
+      {
+        "id": 804,
+        "title": "Smart Bath",
+        "category": "Bathroom",
+        "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800"
+      }
+    ]
+  }
+]
