@@ -1,0 +1,110 @@
+<main class="page-shell" *ngIf="designer as profile; else notFound">
+                      <div class="breadcrumbs">
+                                            <a routerLink="/designers">Designers</a><span>/</span><span>{{ profile.name
+                                                                  }}</span>
+                      </div>
+                      <section class="profile-hero section">
+                                            <div class="profile-image">
+                                                                  <img [src]="profile.profileImage"
+                                                                                        [alt]="profile.name" />
+                                            </div>
+                                            <div class="profile-copy">
+                                                                  <p class="eyebrow">Independent interior designer</p>
+                                                                  <div class="profile-heading">
+                                                                                        <h1>{{ profile.name }}</h1>
+                                                                                        <span class="rating-large">★ {{
+                                                                                                              profile.rating
+                                                                                                              }}</span>
+                                                                  </div>
+                                                                  <p class="profile-description">{{ profile.description
+                                                                                        }}</p>
+                                                                  <div class="profile-stats">
+                                                                                        <div>
+                                                                                                              <strong>{{ profile.experience
+                                                                                                                                    }}</strong><span>Experience</span>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                                              <strong>{{ profile.projectsCompleted
+                                                                                                                                    }}</strong><span>Projects
+                                                                                                                                    completed</span>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                                              <strong>{{ profile.states.length
+                                                                                                                                    }}</strong><span>States
+                                                                                                                                    served</span>
+                                                                                        </div>
+                                                                  </div>
+                                                                  <a class="button button-dark"
+                                                                                        [routerLink]="['/contact', profile.id]">Contact
+                                                                                        designer <span>↗</span></a>
+                                            </div>
+                      </section>
+                      <section class="profile-lower section">
+                                            <div>
+                                                                  <p class="eyebrow">About the studio</p>
+                                                                  <h2>Spaces that feel<br /><em>like yours.</em></h2>
+                                                                  <p class="body-copy">
+                                                                                        {{ profile.description }} Every
+                                                                                        project begins with listening
+                                                                                        closely to
+                                                                                        the way you live, then shaping a
+                                                                                        space around it.
+                                                                  </p>
+                                                                  <h3>States served</h3>
+                                                                  <div class="tag-list dark-tags">
+                                                                                        <span
+                                                                                                              *ngFor="let state of profile.states">{{
+                                                                                                              state
+                                                                                                              }}</span>
+                                                                  </div>
+                                                                  <h3>Specializations</h3>
+                                                                  <div class="tag-list dark-tags">
+                                                                                        <span
+                                                                                                              *ngFor="let style of profile.specialization">{{
+                                                                                                              style
+                                                                                                              }}</span>
+                                                                  </div>
+                                            </div>
+                                            <div class="portfolio-block">
+                                                                  <div class="section-heading">
+                                                                                        <div>
+                                                                                                              <p
+                                                                                                                                    class="eyebrow">
+                                                                                                                                    Selected
+                                                                                                                                    work
+                                                                                                              </p>
+                                                                                                              <h2>The portfolio.
+                                                                                                              </h2>
+                                                                                        </div>
+                                                                                        <span class="muted">{{ profile.projects.length
+                                                                                                              }}
+                                                                                                              projects</span>
+                                                                  </div>
+                                                                  <div class="portfolio-grid">
+                                                                                        <article *ngFor="let project of profile.projects"
+                                                                                                              class="portfolio-card">
+                                                                                                              <img [src]="project.image"
+                                                                                                                                    [alt]="project.title"
+                                                                                                                                    loading="lazy" />
+                                                                                                              <div>
+                                                                                                                                    <span>{{ project.category
+                                                                                                                                                          }}</span>
+                                                                                                                                    <h3>{{ project.title }}
+                                                                                                                                    </h3>
+                                                                                                              </div>
+                                                                                        </article>
+                                                                  </div>
+                                            </div>
+                      </section>
+</main>
+<ng-template #notFound>
+                      <main class="empty-state full-page">
+                                            <span>⌂</span>
+                                            <h1>Designer not found</h1>
+                                            <p>
+                                                                  That profile may have moved. Browse the directory to
+                                                                  find another match.
+                                            </p>
+                                            <a class="button button-dark" routerLink="/designers">Browse designers</a>
+                      </main>
+</ng-template>

@@ -1,0 +1,59 @@
+.designer-card {
+  height: 100%;
+}
+.designer-photo {
+  position: relative;
+}
+.designer-photo img {
+  aspect-ratio: 4/3;
+  filter: saturate(0.88);
+  transition:
+    filter 0.3s ease,
+    transform 0.5s ease;
+}
+.designer-card:hover .designer-photo img {
+  filter: saturate(1);
+  transform: scale(1.03);
+}
+.rating {
+  background: white;
+  bottom: 12px;
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 7px 10px;
+  position: absolute;
+  right: 12px;
+  box-shadow: 0 6px 16px rgba(31, 43, 36, 0.12);
+}
+.card-title-row {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+.card-title-row h3 { min-width: 0; overflow-wrap: break-word; }
+.verified {
+  background: var(--accent);
+  border-radius: 50%;
+  color: white;
+  font-size: 0.65rem;
+  height: 16px;
+  text-align: center;
+  width: 16px;
+}
+.card-description {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 15px 0;
+}
+.service-line {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+.card-actions .button {
+  border-radius: 2px;
+}

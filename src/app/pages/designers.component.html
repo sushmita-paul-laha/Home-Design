@@ -1,0 +1,72 @@
+<main class="page-shell">
+                      <section class="page-intro">
+                                            <p class="eyebrow">The directory</p>
+                                            <h1>Find your<br /><em>design partner.</em></h1>
+                                            <p>
+                                                                  Explore a considered network of independent interior
+                                                                  designers, studios
+                                                                  and architects.
+                                            </p>
+                      </section>
+                      <section class="section directory-section">
+                                            <div class="filter-bar">
+                                                                  <label class="search-field"><span>⌕</span><input
+                                                                                                              type="search"
+                                                                                                              placeholder="Search designers, styles or states..."
+                                                                                                              [(ngModel)]="searchTerm"
+                                                                                                              (ngModelChange)="filterDesigners()" /></label><select
+                                                                                        [(ngModel)]="selectedState"
+                                                                                        (ngModelChange)="filterDesigners()">
+                                                                                        <option value="">All states
+                                                                                        </option>
+                                                                                        <option *ngFor="let state of states"
+                                                                                                              [value]="state">
+                                                                                                              {{ state
+                                                                                                              }}
+                                                                                        </option>
+                                                                  </select><select [(ngModel)]="selectedSpecialization"
+                                                                                        (ngModelChange)="filterDesigners()">
+                                                                                        <option value="">All styles
+                                                                                        </option>
+                                                                                        <option *ngFor="let style of specializations"
+                                                                                                              [value]="style">
+                                                                                                              {{ style
+                                                                                                              }}
+                                                                                        </option>
+                                                                  </select><select [(ngModel)]="sortBy"
+                                                                                        (ngModelChange)="filterDesigners()">
+                                                                                        <option value="projects">Most
+                                                                                                              projects
+                                                                                        </option>
+                                                                                        <option value="rating">Highest
+                                                                                                              rated
+                                                                                        </option>
+                                                                                        <option value="experience">Most
+                                                                                                              experienced
+                                                                                        </option>
+                                                                  </select><button class="clear-button" type="button"
+                                                                                        (click)="clearFilters()">
+                                                                                        Clear
+                                                                  </button>
+                                            </div>
+                                            <div class="results-head">
+                                                                  <p>{{ filteredDesigners.length }} designers</p>
+                                                                  <span *ngIf="loading">Loading directory...</span>
+                                            </div>
+                                            <div class="designer-grid" *ngIf="filteredDesigners.length; else empty">
+                                                                  <app-designer-card *ngFor="let designer of filteredDesigners"
+                                                                                        [designer]="designer" />
+                                            </div>
+                                            <ng-template #empty>
+                                                                  <div class="empty-state">
+                                                                                        <span>⌂</span>
+                                                                                        <h2>No designers found</h2>
+                                                                                        <p>Try broadening your search or
+                                                                                                              clearing
+                                                                                                              the
+                                                                                                              filters.
+                                                                                        </p>
+                                                                  </div>
+                                            </ng-template>
+                      </section>
+</main>

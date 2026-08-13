@@ -1,0 +1,31 @@
+<main class="page-shell">
+                      <section class="page-intro compact">
+                                            <p class="eyebrow">The collection</p>
+                                            <h1>Rooms with<br /><em>room to live.</em></h1>
+                                            <p>Browse real projects by the people who designed them.</p>
+                      </section>
+                      <section class="section designs-section">
+                                            <div class="category-tabs">
+                                                                  <a [class.active]="!activeCategory"
+                                                                                        routerLink="/designs">All
+                                                                                        rooms</a><a
+                                                                                        *ngFor="let category of categories"
+                                                                                        [class.active]="activeCategory === category.slug"
+                                                                                        [routerLink]="['/designs', category.slug]">{{
+                                                                                        category.name }}</a>
+                                            </div>
+                                            <div class="design-grid" *ngIf="designs.length; else empty">
+                                                                  <app-design-card *ngFor="let design of designs"
+                                                                                        [design]="design" />
+                                            </div>
+                                            <ng-template #empty>
+                                                                  <div class="empty-state">
+                                                                                        <span>⌂</span>
+                                                                                        <h2>No designs here yet</h2>
+                                                                                        <p>Try another room to keep
+                                                                                                              exploring.
+                                                                                        </p>
+                                                                  </div>
+                                            </ng-template>
+                      </section>
+</main>

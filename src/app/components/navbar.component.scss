@@ -1,0 +1,107 @@
+.site-header {
+  align-items: center;
+  background: rgba(242, 240, 234, 0.88);
+  border-bottom: 1px solid rgba(31, 43, 36, 0.06);
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 5vw;
+  position: relative;
+  backdrop-filter: blur(14px);
+  z-index: 10;
+}
+.brand {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  transition: opacity 0.25s ease;
+}
+.brand:hover {
+  opacity: 0.72;
+}
+.brand span {
+  align-items: center;
+  background: var(--accent);
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  font-family: var(--display);
+  height: 30px;
+  justify-content: center;
+  margin-right: 8px;
+  width: 30px;
+}
+nav {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+}
+nav a {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+nav a:hover,
+nav a.active {
+  color: var(--ink);
+}
+nav a:not(.nav-cta) {
+  position: relative;
+}
+nav a:not(.nav-cta)::after {
+  background: var(--accent);
+  bottom: -8px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+  width: 100%;
+}
+nav a:not(.nav-cta):hover::after,
+nav a:not(.nav-cta).active::after {
+  transform: scaleX(1);
+}
+.nav-cta {
+  color: white !important;
+  font-size: 0.72rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.menu-button {
+  background: none;
+  border: 0;
+  color: var(--ink);
+  display: none;
+  font-size: 1.35rem;
+  padding: 6px 8px;
+}
+@media (max-width: 760px) {
+  .site-header {
+    padding: 18px 5vw;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav {
+    align-items: stretch;
+    background: var(--paper);
+    box-shadow: 0 12px 24px rgba(35, 42, 36, 0.12);
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    left: 5vw;
+    padding: 22px;
+    position: absolute;
+    right: 5vw;
+    top: 70px;
+  }
+  nav.is-open {
+    display: flex;
+  }
+}

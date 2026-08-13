@@ -1,0 +1,141 @@
+<main class="page-shell">
+                      <section class="contact-layout section">
+                                            <div class="contact-copy">
+                                                                  <p class="eyebrow">Start a conversation</p>
+                                                                  <h1>Let’s make<br /><em>room for you.</em></h1>
+                                                                  <p>
+                                                                                        Tell us a little about your
+                                                                                        project. We’ll connect you with
+                                                                                        a designer
+                                                                                        who gets your brief.
+                                                                  </p>
+                                                                  <div class="contact-selected"
+                                                                                        *ngIf="designer as profile">
+                                                                                        <img [src]="profile.profileImage"
+                                                                                                              [alt]="profile.name" />
+                                                                                        <div>
+                                                                                                              <span>Enquiring
+                                                                                                                                    with</span><strong>{{
+                                                                                                                                    profile.name
+                                                                                                                                    }}</strong><a
+                                                                                                                                    [routerLink]="['/designers', profile.id]">View
+                                                                                                                                    profile
+                                                                                                                                    ↗</a>
+                                                                                        </div>
+                                                                  </div>
+                                            </div>
+                                            <form class="contact-form" [formGroup]="form" (ngSubmit)="submit()"
+                                                                  *ngIf="!submitted; else success">
+                                                                  <div class="form-row">
+                                                                                        <label>Full name<input formControlName="fullName"
+                                                                                                                                    placeholder="Your name" /><small
+                                                                                                                                    *ngIf="invalid('fullName')">Please
+                                                                                                                                    enter
+                                                                                                                                    your
+                                                                                                                                    name.</small></label><label>Email
+                                                                                                              address<input type="email"
+                                                                                                                                    formControlName="email"
+                                                                                                                                    placeholder="you@example.com" /><small
+                                                                                                                                    *ngIf="invalid('email')">Enter
+                                                                                                                                    a
+                                                                                                                                    valid
+                                                                                                                                    email.</small></label>
+                                                                  </div>
+                                                                  <div class="form-row">
+                                                                                        <label>Phone number<input formControlName="phone"
+                                                                                                                                    placeholder="10 digit phone number" /><small
+                                                                                                                                    *ngIf="invalid('phone')">Enter
+                                                                                                                                    a
+                                                                                                                                    valid
+                                                                                                                                    phone
+                                                                                                                                    number.</small></label><label>City<input
+                                                                                                                                    formControlName="city"
+                                                                                                                                    placeholder="Where do you live?" /><small
+                                                                                                                                    *ngIf="invalid('city')">Please
+                                                                                                                                    enter
+                                                                                                                                    your
+                                                                                                                                    city.</small></label>
+                                                                  </div>
+                                                                  <div class="form-row">
+                                                                                        <label>Project type<select
+                                                                                                                                    formControlName="projectType">
+                                                                                                                                    <option
+                                                                                                                                                          value="">
+                                                                                                                                                          Choose
+                                                                                                                                                          a
+                                                                                                                                                          room
+                                                                                                                                    </option>
+                                                                                                                                    <option
+                                                                                                                                                          *ngFor="let type of projectTypes">
+                                                                                                                                                          {{
+                                                                                                                                                          type
+                                                                                                                                                          }}
+                                                                                                                                    </option>
+                                                                                                              </select><small
+                                                                                                                                    *ngIf="invalid('projectType')">Choose
+                                                                                                                                    a
+                                                                                                                                    project
+                                                                                                                                    type.</small></label><label>Estimated
+                                                                                                              budget<select
+                                                                                                                                    formControlName="budget">
+                                                                                                                                    <option
+                                                                                                                                                          value="">
+                                                                                                                                                          Select
+                                                                                                                                                          a
+                                                                                                                                                          range
+                                                                                                                                    </option>
+                                                                                                                                    <option
+                                                                                                                                                          *ngFor="let budget of budgets">
+                                                                                                                                                          {{
+                                                                                                                                                          budget
+                                                                                                                                                          }}
+                                                                                                                                    </option>
+                                                                                                              </select></label>
+                                                                  </div>
+                                                                  <div class="form-row">
+                                                                                        <label>State<input formControlName="state"
+                                                                                                                                    placeholder="Your state" /></label><label>Preferred
+                                                                                                              contact<select
+                                                                                                                                    formControlName="preferredContactMethod">
+                                                                                                                                    <option>Phone
+                                                                                                                                    </option>
+                                                                                                                                    <option>Email
+                                                                                                                                    </option>
+                                                                                                                                    <option>WhatsApp
+                                                                                                                                    </option>
+                                                                                                              </select></label>
+                                                                  </div>
+                                                                  <label>Tell us about your project<textarea formControlName="message"
+                                                                                                              rows="5"
+                                                                                                              placeholder="What are you imagining?"></textarea><small
+                                                                                                              *ngIf="invalid('message')">Please
+                                                                                                              share a
+                                                                                                              little
+                                                                                                              about your
+                                                                                                              project.</small></label><button
+                                                                                        class="button button-dark submit-button"
+                                                                                        type="submit">
+                                                                                        Send enquiry <span>↗</span>
+                                                                  </button>
+                                            </form>
+                                            <ng-template #success>
+                                                                  <div class="success-state">
+                                                                                        <span>✓</span>
+                                                                                        <h2>Thank you.</h2>
+                                                                                        <p>
+                                                                                                              Your
+                                                                                                              enquiry
+                                                                                                              has been
+                                                                                                              submitted.
+                                                                                                              A designer
+                                                                                                              will
+                                                                                                              contact
+                                                                                                              you soon.
+                                                                                        </p>
+                                                                                        <a class="button button-outline"
+                                                                                                              routerLink="/">Back
+                                                                                                              home</a>
+                                                                  </div>
+                                            </ng-template>
+                      </section>
+</main>

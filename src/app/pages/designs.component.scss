@@ -1,0 +1,31 @@
+.compact {
+  padding-bottom: 38px;
+}
+.designs-section {
+  padding-top: 0;
+}
+.category-tabs {
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+.category-tabs a {
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+.category-tabs a.active,
+.category-tabs a:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}

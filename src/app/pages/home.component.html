@@ -1,0 +1,70 @@
+<main>
+                      <section class="hero">
+                                            <div class="hero-copy">
+                                                                  <p class="eyebrow light">A better way home</p>
+                                                                  <h1>Design your <em>dream</em> home.</h1>
+                                                                  <p class="hero-subtitle">
+                                                                                        Discover inspiring interiors and
+                                                                                        connect with trusted designers
+                                                                                        across
+                                                                                        India.
+                                                                  </p>
+                                                                  <div class="hero-search">
+                                                                                        <span>⌕</span><input #search
+                                                                                                              type="search"
+                                                                                                              placeholder="Search a style, room or city" /><a
+                                                                                                              [routerLink]="['/designers']"
+                                                                                                              [queryParams]="{ search: search.value }">Search</a>
+                                                                  </div>
+                                                                  <div class="hero-actions">
+                                                                                        <a class="button button-light"
+                                                                                                              routerLink="/designs">Explore
+                                                                                                              designs
+                                                                                                              <span>↗</span></a><a
+                                                                                                              class="button button-ghost"
+                                                                                                              routerLink="/designers">Find
+                                                                                                              designers</a>
+                                                                  </div>
+                                            </div>
+                      </section>
+                      <section class="section section-tight">
+                                            <div class="section-heading">
+                                                                  <div>
+                                                                                        <p class="eyebrow">Browse by
+                                                                                                              room</p>
+                                                                                        <h2>Start with a feeling.</h2>
+                                                                  </div>
+                                                                  <a class="text-link" routerLink="/designs">View all
+                                                                                        designs <span>↗</span></a>
+                                            </div>
+                                            <div class="category-grid">
+                                                                  <app-category-card *ngFor="let category of categories"
+                                                                                        [category]="category" />
+                                            </div>
+                      </section>
+                      <section class="section featured-section">
+                                            <div class="section-heading">
+                                                                  <div>
+                                                                                        <p class="eyebrow">The shortlist
+                                                                                        </p>
+                                                                                        <h2>Designers worth knowing.
+                                                                                        </h2>
+                                                                  </div>
+                                                                  <a class="text-link" routerLink="/designers">Meet all
+                                                                                        designers <span>↗</span></a>
+                                            </div>
+                                            <div class="designer-grid">
+                                                                  <app-designer-card *ngFor="let designer of featuredDesigners"
+                                                                                        [designer]="designer" />
+                                            </div>
+                      </section>
+                      <section class="statement">
+                                            <p class="eyebrow">Home, considered</p>
+                                            <h2>
+                                                                  Good design is not about more.<br /><em>It is about
+                                                                                        what matters.</em>
+                                            </h2>
+                                            <a class="button button-dark" routerLink="/about">Our point of view
+                                                                  <span>↗</span></a>
+                      </section>
+</main>

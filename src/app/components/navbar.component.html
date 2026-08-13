@@ -1,0 +1,23 @@
+<header class="site-header">
+                      <a class="brand" routerLink="/" aria-label="HomeDesign home"><span>H</span> HomeDesign</a>
+                      <button class="menu-button" type="button" aria-label="Toggle navigation"
+                                            (click)="menuOpen = !menuOpen">
+                                            ☰
+                      </button>
+                      <nav [class.is-open]="menuOpen" aria-label="Main navigation">
+                                            <a routerLink="/" routerLinkActive="active"
+                                                                  [routerLinkActiveOptions]="{ exact: true }"
+                                                                  (click)="menuOpen = false">Home</a>
+                                            <a routerLink="/designers" routerLinkActive="active"
+                                                                  (click)="menuOpen = false">Designers</a>
+                                            <a routerLink="/designs" routerLinkActive="active"
+                                                                  (click)="menuOpen = false">Designs</a>
+                                            <a routerLink="/about" routerLinkActive="active"
+                                                                  (click)="menuOpen = false">About</a>
+                                            <a routerLink="/contact" routerLinkActive="active"
+                                                                  (click)="menuOpen = false">Contact</a>
+                                            <a class="button button-dark nav-cta" routerLink="/designers"
+                                                                  (click)="menuOpen = false">Find a designer
+                                                                  <span>↗</span></a>
+                      </nav>
+</header>

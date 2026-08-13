@@ -1,0 +1,40 @@
+.category-card {
+  background: var(--ink);
+  border-radius: 4px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.category-card img {
+  aspect-ratio: 1;
+  filter: saturate(0.8);
+  transition: transform 0.5s ease;
+}
+.category-card:hover img {
+  filter: saturate(1);
+  transform: scale(1.06);
+}
+.category-overlay {
+  background: linear-gradient(transparent, rgba(20, 25, 21, 0.8));
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  padding: 34px 18px 18px;
+  position: absolute;
+  right: 0;
+}
+.category-overlay strong {
+  font-family: var(--display);
+  font-size: 1.2rem;
+}
+.category-overlay small {
+  font-size: 0.7rem;
+  margin-top: 5px;
+  opacity: 0.84;
+}
+.category-overlay b {
+  float: right;
+  font-size: 1.15rem;
+}

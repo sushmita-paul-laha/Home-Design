@@ -1,0 +1,37 @@
+<article class="designer-card" *ngIf="designer">
+                      <div class="designer-photo">
+                                            <img [src]="designer.profileImage" [alt]="designer.name"
+                                                                  loading="lazy" /><span class="rating">★ {{
+                                                                  designer.rating }}</span>
+                      </div>
+                      <div class="designer-content">
+                                            <div class="card-title-row">
+                                                                  <h3>{{ designer.name }}</h3>
+                                                                  <span class="verified">✓</span>
+                                            </div>
+                                            <p class="muted">
+                                                                  {{ designer.experience }} experience <span>·</span>
+                                                                  {{ designer.projectsCompleted }} projects
+                                            </p>
+                                            <p class="card-description">{{ designer.description }}</p>
+                                            <div class="tag-list">
+                                                                  <span
+                                                                                        *ngFor="let item of designer.specialization | slice: 0 : 3">{{
+                                                                                        item
+                                                                                        }}</span>
+                                            </div>
+                                            <p class="service-line">
+                                                                  Serving {{ designer.states.slice(0, 3).join(" · ")
+                                                                  }}<span *ngIf="designer.states.length > 3">
+                                                                                        +{{ designer.states.length - 3
+                                                                                        }}</span>
+                                            </p>
+                                            <div class="card-actions">
+                                                                  <a class="button button-outline"
+                                                                                        [routerLink]="['/designers', designer.id]">View
+                                                                                        profile</a><a class="text-link"
+                                                                                        [routerLink]="['/contact', designer.id]">Contact
+                                                                                        <span>↗</span></a>
+                                            </div>
+                      </div>
+</article>
